@@ -1,0 +1,27 @@
+@import "./eyes.scss";
+@import "./mouth.scss";
+@import "./../animations/face-parts-bouncing.scss";
+
+@mixin face-parts {
+  & .face-parts {
+    @include face-parts-bounce-animation;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include eye(
+      $eye-id: "left",
+      $outer-eye-left: 10%,
+      $outer-eye-top: 40%,
+      $inner-eye-left: 80%,
+      $inner-eye-top: 50%
+    );
+    @include eye(
+      $eye-id: "right",
+      $outer-eye-left: 50%,
+      $outer-eye-top: 40%,
+      $inner-eye-left: 20%,
+      $inner-eye-top: 50%
+    );
+    @include mouth;
+  }
+}
