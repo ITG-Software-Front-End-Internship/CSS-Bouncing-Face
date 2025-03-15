@@ -1,0 +1,29 @@
+@import "./../shared/colors";
+@import "./eyes.scss";
+@import "./mouth.scss";
+@import "./../animations/face-bouncing.scss";
+
+#face {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: $sky-blue-color;
+  position: absolute;
+  @include face-bounce-animation;
+
+  @include eye(
+    $eye-id: "left",
+    $outer-eye-left: 10%,
+    $outer-eye-top: 40%,
+    $inner-eye-left: 80%,
+    $inner-eye-top: 50%
+  );
+  @include eye(
+    $eye-id: "right",
+    $outer-eye-left: 50%,
+    $outer-eye-top: 40%,
+    $inner-eye-left: 20%,
+    $inner-eye-top: 50%
+  );
+  @include mouth;
+}

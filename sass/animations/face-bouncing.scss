@@ -1,0 +1,13 @@
+@mixin face-bounce-animation {
+  animation: face-bounce 0.5s linear infinite;
+}
+
+@keyframes face-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

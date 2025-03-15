@@ -1,0 +1,31 @@
+@import "./../shared/colors";
+
+@mixin eye(
+  $eye-id,
+  $outer-eye-left,
+  $outer-eye-top,
+  $inner-eye-left,
+  $inner-eye-top
+) {
+  @debug "$eye-id";
+  #eye-#{$eye-id} {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $white-color;
+    position: absolute;
+    left: $outer-eye-left;
+    top: $outer-eye-top;
+    transform: translate(-($outer-eye-left), -($outer-eye-top));
+    & .inner-part {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: $dark-blue-grey;
+      position: absolute;
+      left: $inner-eye-left;
+      top: $inner-eye-top;
+      transform: translate(-($inner-eye-left), -($inner-eye-top));
+    }
+  }
+}

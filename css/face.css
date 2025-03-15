@@ -1,26 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  max-width: 100%;
-}
-
-main,
-section {
-  height: 100%;
-  width: 100%;
-}
-
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @keyframes face-bounce {
   0%, 100% {
     transform: translateY(0);
@@ -85,6 +62,6 @@ section {
   border-top: none;
   border-bottom-right-radius: 250px;
   border-bottom-left-radius: 250px;
-  top: 55%;
+  top: 48%;
   left: 25%;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=face.css.map */

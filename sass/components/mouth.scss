@@ -1,0 +1,15 @@
+@import "./../shared/colors.scss";
+
+@mixin mouth {
+  #mouth {
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    border: 8px solid $black-color;
+    border-top: none;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+    top: 55%;
+    left: 25%;
+  }
+}
