@@ -1,0 +1,13 @@
+@import "./../shared/colors";
+@import "./../animations/face-bouncing.scss";
+@import "./face-parts.scss";
+
+#face {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: $sky-blue-color;
+  position: absolute;
+  @include face-bounce-animation;
+  @include face-parts;
+}

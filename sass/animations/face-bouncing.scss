@@ -1,0 +1,16 @@
+@mixin face-bounce-animation {
+  animation: face-bounce 1s forwards infinite alternate;
+  animation-fill-mode: both;
+}
+
+@keyframes face-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
