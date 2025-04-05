@@ -5,6 +5,7 @@ This project is a simple web page that demonstrates a bouncing face animation us
 ## Table of Contents
 
 - [Project Description](#project-description)
+- [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,6 +15,11 @@ This project is a simple web page that demonstrates a bouncing face animation us
 ## Project Description
 
 The "Task-8-bouncing-face" project is a fun and interactive web page showcasing a bouncing face animation. This project is designed to demonstrate the use of CSS and SCSS for animations and styling, along with HTML for the structure.
+
+## Demo 
+
+Check out the live demo here:  
+🔗 [Live Demo on GitHub Pages](https://diaahsharqawi.github.io/Task-8-bouncing-face/)
 
 ## Technologies Used
 
